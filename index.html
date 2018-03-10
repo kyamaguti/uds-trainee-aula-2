@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+       /*var nome = 'Kenji Lukas Oliveira Yamaguti';
+       var idade = 25;
+       var sexoFeminino = false;
+       var peso = 70.00;
+
+       alert('Olá meu nome é '+nome+', tenho '+idade+' anos.');
+
+       if (idade <= 18) {
+           alert('Novinho(a)');
+       }
+         else if (idade <= 30){
+           alert('Tiozinho(a)');
+       }
+         else {
+           alert('Tiozão(zona)');
+       }
+
+        var semana = new Date().getDay();
+        var dia;
+
+        switch (semana){
+          case 0:
+             dia = "dominguera";
+             break;
+          case 1:
+             dia = "segunda";
+             break;
+          case 2:
+             dia = "terça";
+             break;
+          case 3:
+             dia = "quarta";
+             break;
+          case 4:
+             dia = "quintaconha";
+             break;
+          case 5:
+             dia = "sextaxera";
+             break;
+          case 6:
+             dia = "sabadera";
+             break;
+
+          }
+
+          alert("Alo, hoje é "+dia+" caralho vamo bebe !!!");
+
+        function conversao(decimal){
+
+           switch (decimal) {
+              case 1:
+                return "I";
+              case 2:
+                return "II";
+              case 3:
+                return "III";
+              case 4:
+                return "IV";
+              case 5:
+                return "V";
+              case 6:
+                return "VI";
+              case 7:
+                return "VII";
+              case 8:
+                return "VIII";
+              case 9:
+                return "IX";
+              case 10:
+                return "X";
+           }
+
+        }
+
+          var numero = prompt('Digite um número de 1 a 10:');
+          numero = parseInt( numero );
+
+          var a = conversao(numero);
+          alert(a);
+          if (numero < 1 ){
+            alert('Número inválido');
+          } else if (numero >10){
+            alert("Número Inválido");
+          }
+
+          for (var i = 10; i >= 1; i--) {
+            var a = conversao(i);
+            alert(a);
+
+          }
+         var i = 10
+         while (i >= 1) {
+           alert( conversao (i--));
+         }*/
+
+        /*var InformaçõesPessoais = [];
+        var Endereço = [];
+        InformaçõesPessoais.push('Kenji Yamaguti');
+        Endereço.push('8675000');
+        InformaçõesPessoais.push(Endereço)
+        Endereço.push('360');
+        Endereço.push('Casa');
+        Endereço.push('Centro');
+        Endereço.push('Iguaraçu');
+        Endereço.push('Paraná');
+        InformaçõesPessoais.push(32481737);
+
+        InformaçõesPessoais[0] = 'Kenji Lukas Oliveira Yamaguti';
+        InformaçõesPessoais.splice(2,1);
+
+
+        console.log (InformaçõesPessoais);
+        console.log (Endereço);*/
+
+        var Informações = {
+          Nome:'Kenji Lukas',
+          Sobrenome:'Oliveira Yamaguti',
+          Endereço: {
+            cep:8675000,
+            Logradouro:'Rua Chorume',
+            Número:360,
+            Complemento:'Casa',
+            Bairro:'Centro',
+            Cidade:'Iguaraçu',
+            Estado:'PR',
+          },
+          Showinfo: function(){
+
+            alert('Meu nome é ' + this.Nome + ' ' + this.Sobrenome +'. Moro na ' + this.Endereço.Logradouro + ', ' + this.Endereço.Número +
+            ', em uma ' + this.Endereço.Complemento + 'na cidade de ' + this.Endereço.Cidade + '/' + this.Endereço.Estado +
+            ', moro bem no centro da cidade. O CEP do município é ' + this.Endereço.cep +'.' )
+          }
+
+        };
+
+        Informações.Showinfo();
+
+
+    </script>
+  </body>
+</html>
